@@ -23,6 +23,8 @@ local ScriptsTab = Window:NewTab("Scripts")
 
 local ScriptTabSection = ScriptsTab:NewSection("General Scripts")
 
+local GameScriptsTabSection = ScriptsTab:NewSection("Game Scripts")
+
 ScriptTabSection:NewButton("ESP (You can't close it)", "Why not finding others?", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ArcherDevelopment/LUNAESP/main/lunaesp.lua"))()
 end)
@@ -31,7 +33,7 @@ ScriptTabSection:NewButton("ADMIN COMMANDS", "OMG", function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
-ScriptTabSection:NewButton("Murder Mystery 2", "ez", function()
+GameScriptsTabSection:NewButton("Murder Mystery 2", "ez", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
 end)
 
@@ -154,3 +156,12 @@ local GuiSection = HelpTab:NewSection("Gui")
 GuiSection:NewKeybind("Gui Toggle", "Close & Open The Gui", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
+
+--Credits Tab
+
+local CreditsTab = Window:NewTab("Credits")
+
+local CreditsSection = CreditsTab:NewSection("Gui Credits;ad")
+
+CreditsSection:NewLabel("Special Thanks To Kavo Library")
+CreditsSection:NewLabel("Credits: Can.#4206")
