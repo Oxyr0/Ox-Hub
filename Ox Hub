@@ -1,0 +1,44 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "HOOGGG RIDERRRR";
+            Text = "Made by Can.#4206";
+                    })
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("Ox Hub", "DarkTheme")
+
+local Tab = Window:NewTab("Player Settings")
+
+local PlayerSettingsSection = Tab:NewSection("Player Settings")
+PlayerSettingsSection:NewSlider("WalkSpeed", "Become Flash For Free lol", 500, 0, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSettingsSection:NewSlider("Jump Power", "THE FLOOR IS LAVA!", 500, 0, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+local ScriptsTab = Window:NewTab("Scripts")
+
+local ScriptTabSection = ScriptsTab:NewSection("General Scripts")
+
+ScriptTabSection:NewButton("ESP (You can't close it)", "Why not finding others?", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ArcherDevelopment/LUNAESP/main/lunaesp.lua"))()
+end)
+
+ScriptTabSection:NewButton("ADMIN COMMANDS", "OMG", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+ScriptTabSection:NewButton("Murder Mystery 2", "ez", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
+end)
+
+local HelpTab = Window:NewTab("Help")
+
+local GuiSection = HelpTab:NewSection("Gui")
+
+GuiSection:NewKeybind("Gui Toggle", "Close & Open The Gui", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
