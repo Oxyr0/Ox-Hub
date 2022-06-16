@@ -148,6 +148,13 @@ end)
 
 end)
 
+GameScriptsTabSection:NewButton("Jailbreak Auto Rob (You Can Get Banned)", "Ez Cash", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))();
+end)
+
+GameScriptsTabSection:NewButton("Jailbreak Rob Helper", "Ez Robbery", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Script.lua"))()
+end)
 --Help Tab
 local HelpTab = Window:NewTab("Help")
 
